@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "526878555525",
+    "project_id": "ronin-messenger",
+    "storage_bucket": "ronin-messenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526878555525:android:6ab7ad7a3e6066681d18ec",
+        "android_client_info": {
+          "package_name": "com.ronin.ronin_messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526878555525-dv6feaeit5du3tb3jjhtt6kdrpkhrmp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeCxMMls6OC6iMNolpw1vf07g1tjoUb48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526878555525-dv6feaeit5du3tb3jjhtt6kdrpkhrmp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
