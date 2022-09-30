@@ -19,48 +19,57 @@ class WelcomeScreen extends StatefulWidget {
 class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Column(
+    return Container(
+      decoration: BoxDecoration(
+          color: Colors.yellow,
+          borderRadius: BorderRadius.all(Radius.circular(20))),
+      child: Scaffold(
+        backgroundColor: Colors.black,
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Container(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Container(
-                    height: 250,
-                    width: 250,
-                    child: IconButton(
-                        icon: Image.asset("images/ronin.jpg"),
-                        onPressed: () {
-                          Navigator.pushNamed(context, ChatScreen.screenRoute);
-                        }),
+                  Column(
+                    children: [
+                      Container(
+                        height: 250,
+                        width: 250,
+                        child: IconButton(
+                            icon: Image.asset("images/ronin.jpg"),
+                            onPressed: () {
+                              Navigator.pushNamed(
+                                  context, ChatScreen.screenRoute);
+                            }),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              widButton(
-                color: Colors.yellow,
-                title: 'Sign in',
-                onPressed: () {
-                  Navigator.pushNamed(context, SignInScreen.screenRoute);
-                },
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              widButton(
-                color: Colors.yellow,
-                title: 'Register',
-                onPressed: () {
-                  Navigator.pushNamed(context, RegistrationScreen.screenRoute);
-                },
-              ),
-            ]),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  widButton(
+                    color: Colors.yellow,
+                    title: 'Sign in',
+                    onPressed: () {
+                      Navigator.pushNamed(context, SignInScreen.screenRoute);
+                    },
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  widButton(
+                    color: Colors.yellow,
+                    title: 'Register',
+                    onPressed: () {
+                      Navigator.pushNamed(
+                          context, RegistrationScreen.screenRoute);
+                    },
+                  ),
+                ]),
+          ),
+        ),
       ),
     );
   }
